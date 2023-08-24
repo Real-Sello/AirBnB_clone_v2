@@ -52,7 +52,9 @@ class FileStorage:
             pass
 
     def delete(self, obj=None):
-        """delete obj from __objects if it’s inside - if obj is equal to None"""
+        """delete obj from __objects if it’s inside -
+            if obj is equal to None
+        """
         try:
             del self.__objects["{}.{}".format(type(obj).__name__, obj.id)]
         except (AttributeError, KeyError):

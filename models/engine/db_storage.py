@@ -34,9 +34,10 @@ class DBStorage:
             Base.metadata.drop_all(self.__engine)
 
     def all(self, cls=None):
-        """query on the curret database session all objects depending on the class
-        if cls is None, query all types of objects
-        returns a dict of queried classes in the format <class name>.<obj id> = obj.
+        """query on the curret database session all objects
+            depending on the class if cls is None, query all types of objects
+            returns a dict of queried classes in the format <class name>.<obj
+            id> = obj.
         """
         if cls is None:
             objs = self.__session.query(State).all()
