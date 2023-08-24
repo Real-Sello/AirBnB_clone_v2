@@ -42,7 +42,8 @@ class HBNBCommand(cmd.Cmd):
         return True
 
     def do_create(self, line):
-        """How to use: instantiate <class> using <key 1>=<value 2> <key 2>=<value 2>
+        """How to use: instantiate <class> using <key 1>=<value 2> <key
+            2>=<value 2>
         Generate a fresh instance of the class, providing the specified
         keys and values, and then display the unique identifier
         """
