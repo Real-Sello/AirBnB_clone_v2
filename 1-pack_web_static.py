@@ -3,6 +3,7 @@
 from fabric.api import local
 from datetime import datetime
 
+
 def do_pack():
     """Generates a .tgz archive"""
 
@@ -17,10 +18,10 @@ def do_pack():
         print("Error:", str(e))
         return None
 
+
 if __name__ == "__main__":
     result = do_pack()
     if result:
         print("Archive created:", result)
     else:
         print("Archive creation failed.")
-
